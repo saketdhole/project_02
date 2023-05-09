@@ -40,8 +40,8 @@ class register:
         ele_dateoption.click()
 
         ele_month=self.driver.find_element(By.XPATH,self.dropdown_month_XPATH).click()
-        ele_months=self.driver.find_element(By.CSS_SELECTOR,f"select[name='DateOfBirthMonth'] option[value='{select_month}']")
-        ele_months.click()
+        month_dropdown=self.driver.find_element(By.XPATH,f'//select[@name="DateOfBirthMonth"]/option[@value="{select_month}"]')
+        month_dropdown.click()
 
         ele_year=self.driver.find_element(By.XPATH,self.dropdown_year_xpath).click()
         ele_yearoption=self.driver.find_element(By.XPATH,f"//select[@name='DateOfBirthYear']/option[@value='{select_year}']")
@@ -62,18 +62,21 @@ class register:
         ele_passs.clear()
         ele_passs.send_keys(passs)
 
-    def fun_cpassword(self,cpas):
-        ele_cpas=self.driver.find_element(By.XPATH,self.textbox_confirmpassword_ID)
+    def fun_confirmpassword(self,cpassword):
+        ele_cpas=self.driver.find_element(By.ID,self.textbox_confirmpassword_ID)
         ele_cpas.clear()
-        ele_cpas.send_keys(cpas)
+        ele_cpas.send_keys(cpassword)
 
     def fun_clickregister(self):
         self.driver.find_element(By.ID,self.button_register_ID).click()
 
     def fun_checkconfirmmessage(self):
-        cmsg=self.driver.find_element(By.XPATH,self.confirmation_message_xpath)
-        Got=cmsg.text
-        return Got
+        try:
+            cmsg=self.driver.find_element(By.XPATH,self.confirmation_message_xpath)
+            Got=cmsg.text
+            return Got
+        except:
+            return None
 
         # try:
         #     return self.driver.find_element(By.XPATH,self.confirmation_message_xpath).text
