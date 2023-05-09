@@ -13,3 +13,4 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:54163/devtools/browser/fa939d01-4c37-460d-8337-77c6b7cc56a2
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
