@@ -30,9 +30,11 @@ def browser(request):
     return request.config.getoption("--browser")
 
 def pytest_configure(config):
-    config._metadata['Project Name'] = 'Open Cart'
-    config._metadata['Module Name'] = 'Registration'
+    config._metadata['Project Name'] = 'NOP-commerce'
+    config._metadata['Module Name'] = 'Registration & login'
     config._metadata['Tester Name'] = 'Saket Dhole'
+    config.option.htmlpath= os.path.abspath(os.curdir)+ "//reports//" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") +".html"
+
 
 @pytest.mark.optionalhook
 def pytest_metadata(metadata):
@@ -40,6 +42,4 @@ def pytest_metadata(metadata):
     metadata.pop("Plugins", None)
     metadata.pop("Packages", None)
 
-@pytest.hookimpl(tryfirst=True)
-def pytest_configure(config):
-    config.option.htmlpath= os.path.abspath(os.curdir)+ "//reports//" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") +".html"
+
