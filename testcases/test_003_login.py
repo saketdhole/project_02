@@ -3,6 +3,7 @@ from time import sleep
 
 from selenium import webdriver
 
+from pageObject.myaccountpage import myaccount
 from utilities.readproperties import Readconfig
 from pageObject.homepage import homepage
 from pageObject.loginpage import login
@@ -47,6 +48,11 @@ class Testlogin:
         else:
             self.driver.save_screenshot(os.path.abspath(os.curdir)+ "\\screenshots\\"+ "login.png")
             assert False
+
+        self.ap=myaccount(self.driver)
+        self.ap.fun_clicklogout()
+        sleep(2)
+
 
         self.log.info("***End of login test case ***")
 

@@ -7,6 +7,7 @@ from utilities.randomstring import random_string_genrator
 from utilities.readproperties import Readconfig
 from utilities.customLogger import logen
 
+
 class Testclass:
     email=random_string_genrator()
     BASEURL=Readconfig.getapplicationurl()
@@ -51,4 +52,6 @@ class Testclass:
         else:
             self.driver.save_screenshot(os.path.abspath(os.curdir) + "\\screenshots\\" + "register.png")
             assert False
+        sleep(2)
+
         self.logs.info("**** Registration test case Ends ***")
