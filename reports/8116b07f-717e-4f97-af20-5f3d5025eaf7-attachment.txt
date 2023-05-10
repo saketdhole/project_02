@@ -1,0 +1,3 @@
+[32mINFO    [0m debuglogger:test_004_loginddt.py:19 ***Starting DDT testcase***
+[32mINFO    [0m debuglogger:test_004_loginddt.py:24 Fetching url
+[32mINFO    [0m debuglogger:test_004_loginddt.py:26 Clicking login button

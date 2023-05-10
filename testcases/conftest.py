@@ -33,7 +33,7 @@ def pytest_configure(config):
     config._metadata['Project Name'] = 'NOP-commerce'
     config._metadata['Module Name'] = 'Registration & login'
     config._metadata['Tester Name'] = 'Saket Dhole'
-    config.option.htmlpath= os.path.abspath(os.curdir)+ "//reports//" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") +".html"
+    #config.option.htmlpath= os.path.abspath(os.curdir)+ "//reports//" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") +".html"
 
 
 @pytest.mark.optionalhook

@@ -1,0 +1,11 @@
+[32mINFO    [0m debuglogger:test_002_registeruser.py:20 *** Started registration testcase ***
+[32mINFO    [0m debuglogger:test_002_registeruser.py:25 Clicking register
+[32mINFO    [0m debuglogger:test_002_registeruser.py:31 Entering firstname
+[32mINFO    [0m debuglogger:test_002_registeruser.py:33 Entering lastname
+[32mINFO    [0m debuglogger:test_002_registeruser.py:35 Entering dob
+[32mINFO    [0m debuglogger:test_002_registeruser.py:37 Entering email
+[32mINFO    [0m debuglogger:test_002_registeruser.py:39 Entering company name
+[32mINFO    [0m debuglogger:test_002_registeruser.py:42 Entering password
+[32mINFO    [0m debuglogger:test_002_registeruser.py:45 Confirming password
+[32mINFO    [0m debuglogger:test_002_registeruser.py:49 Checking validation message
+[32mINFO    [0m debuglogger:test_002_registeruser.py:57 **** Registration test case Ends ***

@@ -1,0 +1,8 @@
+[32mINFO    [0m debuglogger:test_003_login.py:23 *** Starting login testcase***
+[32mINFO    [0m debuglogger:test_003_login.py:26 Fetching url
+[32mINFO    [0m debuglogger:test_003_login.py:29 clicking on login
+[32mINFO    [0m debuglogger:test_003_login.py:32 Entering login page
+[32mINFO    [0m debuglogger:test_003_login.py:35 Entering email
+[32mINFO    [0m debuglogger:test_003_login.py:37 Enrtering password
+[32mINFO    [0m debuglogger:test_003_login.py:40 Clicking on login
+[32mINFO    [0m debuglogger:test_003_login.py:43 Checking validation after login
